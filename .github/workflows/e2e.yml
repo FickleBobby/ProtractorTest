@@ -27,4 +27,4 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Run E2E
-        run: npm run e2e
+        run: npm run e2e -- --params.login.username=${{ secrets.USERNAME }} --params.login.password=${{ secrets.PASSWORD }}
